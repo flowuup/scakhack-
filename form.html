@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script><!--defer чтобы скрпт исполльзовался только после загрузки всего html -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+             <img src="img/logo.png" >
+        </a>
+        </div>
+            <a  href="galerimenu.html">Портфолио</a>
+            <a  href="contact.html">Контакты</a>
+            <a  href="price.html">Прайс-лист</a>
+            <a  href="blog.html">Блог</a>
+            <a style="color: red;" href="form.html">Оставить заявку</a>
+    </header>
+
+    <div class="main-content">
+        <div class="form-container">
+            <h2>Форма обратной связи</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="email">Ваш e-mail (обязательное)</label>
+                    <input type="email" id="email" name="email" required>
+                    <div id="emailError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Ваш телефон (обязательное)</label>
+                    <input type="tel" id="phone" name="phone" pattern="(\+7|8)[\s-]?\(?\d{3}\)?[\s-]?\d{3}[\s-]?\d{2}[\s-]?\d{2}" required>
+                    <div id="phoneError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="name">Ваше имя (обязательное)</label>
+                    <input type="text" id="name" name="name" required>
+                    <div id="nameError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Комментарий</label>
+                    <textarea id="comment" name="comment"></textarea>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">Я согласен на обработку персональных данных</label>
+                    <div id="consentError" class="error"></div>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="conter">
+            <p>E-mail: sergey.yakovlev@photo.com</p>
+            <p>Телефон: 8 (987) 123-45-67</p>
+        </div>
+        <div class="conter">
+            <li>vk: vk.com/sergeyyakovlev123</li>
+            <li>tg: t.me/sergeyyakovlev123</li>
+            <p>Все права защищены</p>
+        </div>
+    </footer>
+</body>
+</html>
